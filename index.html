@@ -5,18 +5,104 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>every layout</title>
 	<link rel="stylesheet" href="rsrc/style.css">
+
+	<style>
+		section {
+			align-items: flex-start;
+			display: flex;
+			gap: 1rem;
+			margin: 4rem 0;
+			border-top: 1px solid blue;
+			padding-top:1rem;
+			}
+
+		p { max-width: 60ch;}
+
+		.vignettes {
+			flex: 0 0 15rem;
+			width: 20rem;
+			aspect-ratio: 16/9;
+			/* outline: 1px solid grey; */
+			
+			}
+
+		.vignettes img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			}
+
+
+	</style>
+
 </head>
 <body>
 	<h1>every layout</h1>
 
-	 <a href="layout_01_simple.html"> 
-		<img src="vignettes/layout_01_simple.jpg" alt="">	
-	 </a>
 
-	 <a href="layout_02_colones.html">
-			<img src="vignettes/Layout_02_colones.png" alt="">
-	 </a>
 
-	 
+	
+
+
+	 <section>
+	<div class="vignettes">
+		<a href="layout_01_simple.html"> 
+			<img src="vignettes/layout_01_simple.jpg" alt="">	
+		 </a>
+
+	</div>
+		<div class="description">
+			<h3>Une simple page de text.</h3>
+			<p>fonction essentielle pour une page simple:
+				<br><code>body {max-width: 30rem; margin ; auto}  </code>
+			</div></p>
+	</div>
+		</section>
+
+		<!-- 2 -->
+		 <section>
+	<div class="vignettes">
+		<a href="layout_02_colones.html"> 
+			<img src="vignettes/Layout_02_colones.png" alt="">	
+		 </a>
+
+	</div>
+		<div class="description">
+			<h3>deux colonnes.</h3>
+			<p>fonction essentielle pour colonnes
+				<br><code> section { display: flex}  </code>			</div></p>
+	</div>
+		</section>
+		<!-- 3 -->
+		 <section>
+	<div class="vignettes">
+		<a href="layout_03_inverse.html"> 
+			<img src="vignettes/Layout_03_inverse.jpg" alt="">	
+		 </a>
+
+	</div>
+		<div class="description">
+			<h3>Le zig zag alternaince pair-impaire .</h3>
+			<p>fonction essentielle pour colonnes
+				<code> section { display: flex}  </code>			</div></p>
+	</div>
+		</section>
+
+		<!-- 4 -->
+		 <section>
+	<div class="vignettes">
+		<a href="layout_04_4colones.html"> 
+			<img src="vignettes/Layout_04_4colones.jpg" alt="">	
+		 </a>
+
+	</div>
+		<div class="description">
+			<h3>Quatre colonnes.</h3>
+			<p>fonction essentielle pour une page avec quatre colonnes:
+			<code> body { display: flex; }</code> </code>
+			</div></p>
+	</div>
+		</section>
 </body>
+
 </html>
